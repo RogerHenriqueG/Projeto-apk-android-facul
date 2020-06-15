@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:src="@drawable/inicio"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_layer_gradient"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="-106dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_newregister"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="60dp"
+        android:text="Registre-se"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="@drawable/bg_button_normal"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <EditText
+        android:id="@+id/et_newemail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="18dp"
+        android:imeOptions="actionDone"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:hint="Your Email or Nickname"
+        android:inputType="text"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/et_newpassword"
+        android:background="@drawable/bg_edittext_normal"/>
+
+    <EditText
+        android:id="@+id/et_newpassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="18dp"
+        android:imeOptions="actionDone"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:hint="Your password"
+        android:inputType="textPassword"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/et_confirmpassword"
+        android:background="@drawable/bg_edittext_normal"/>
+
+    <EditText
+        android:id="@+id/et_confirmpassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="36dp"
+        android:imeOptions="actionDone"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/bt_newregister"
+        android:background="@drawable/bg_edittext_normal"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNewCarActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:src="@drawable/inicio"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_layer_gradient"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_valor"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="18dp"
+        android:imeOptions="actionDone"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:hint="Valor do Veiculo"
+        android:inputType="text"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/bt_img"
+        android:background="@drawable/bg_edittext_normal"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_ano"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="18dp"
+        android:imeOptions="actionDone"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:hint="Ano do Veiculo"
+        android:inputType="text"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/et_valor"
+        android:background="@drawable/bg_edittext_normal"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_modelo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="18dp"
+        android:imeOptions="actionDone"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:hint="Adicionar Modelo do Veiculo"
+        android:inputType="text"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/et_marca"
+        android:background="@drawable/bg_edittext_normal"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+    android:id="@+id/et_marca"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginStart="18dp"
+    android:layout_marginEnd="18dp"
+    android:layout_marginBottom="18dp"
+    android:imeOptions="actionDone"
+    android:textColor="@android:color/white"
+    android:textColorHint="@android:color/white"
+    android:hint="Marca do veiculo"
+    android:inputType="text"
+    android:paddingStart="18dp"
+    android:paddingEnd="18dp"
+    app:layout_constraintBottom_toTopOf="@+id/et_ano"
+    android:background="@drawable/bg_edittext_normal"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_img"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="18dp"
+        android:text="Adicionar Imagem"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="@drawable/bg_button_normal"
+        app:layout_constraintBottom_toTopOf="@+id/bt_salvar"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_salvar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="18dp"
+        android:text="Salvar"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="@drawable/bg_button_normal"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:id="@+id/iv_imgcar"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:adjustViewBounds="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="18dp"
+        app:srcCompat="@drawable/asset_svg"
+        app:layout_constraintBottom_toTopOf="@+id/et_modelo"
+        android:background="@drawable/bg_edittext_normal"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
